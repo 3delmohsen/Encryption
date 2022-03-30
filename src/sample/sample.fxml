@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="343.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="168.0" fitWidth="343.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@index.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="109.0" layoutY="137.0" text="Enter The Text">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="285.0" text="Enter The Key">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="thekey" alignment="CENTER" layoutX="170.0" layoutY="280.0" prefHeight="31.0" prefWidth="121.0" promptText="Enter The Key" style="-fx-border-color: black;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="14.0" layoutY="445.0" mnemonicParsing="false" onAction="#encrypt" prefHeight="49.0" prefWidth="121.0" style="-fx-background-color: red; -fx-text-fill: white;" text="Encrypt">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="215.0" layoutY="445.0" mnemonicParsing="false" onAction="#decrypt" prefHeight="49.0" prefWidth="121.0" style="-fx-background-color: green; -fx-text-fill: white;" text="Decrypt">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="thetext" layoutX="14.0" layoutY="163.0" prefHeight="91.0" prefWidth="312.0" promptText="Enter the text" style="-fx-border-color: black;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></TextArea>
+      <TextArea fx:id="massege" layoutX="14.0" layoutY="336.0" prefHeight="91.0" prefWidth="312.0" promptText="Output Text">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextArea>
+   </children>
+</Pane>
